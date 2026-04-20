@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- htmlaunch:enhanced:v2 -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2264%22%20height%3D%2264%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22hsl(24%2C72%25%2C58%25)%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22hsl(54%2C72%25%2C44%25)%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22url(%23g)%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2246%22%20text-anchor%3D%22middle%22%20font-family%3D%22ui-sans-serif%2Csystem-ui%2C-apple-system%2CSegoe%20UI%2Csans-serif%22%20font-size%3D%2238%22%20font-weight%3D%22800%22%20fill%3D%22%23ffffff%22%3EG%3C%2Ftext%3E%3C%2Fsvg%3E">
+<meta name="theme-color" content="#4d7b14">
+<meta name="description" content="G2G Research — Listed-Equity Mirror | Internal Note | deployed with HTMLaunch">
+<link rel="canonical" href="https://jbarry0803.github.io/g2g-research-listed-equity-mirror-intern/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="G2G Research — Listed-Equity Mirror | Internal Note">
+<meta property="og:title" content="G2G Research — Listed-Equity Mirror | Internal Note">
+<meta property="og:description" content="G2G Research — Listed-Equity Mirror | Internal Note | deployed with HTMLaunch">
+<meta property="og:url" content="https://jbarry0803.github.io/g2g-research-listed-equity-mirror-intern/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fjbarry0803.github.io%2Fg2g-research-listed-equity-mirror-intern%2F?w=1200&h=630">
+<meta property="og:image:alt" content="G2G Research — Listed-Equity Mirror | Internal Note">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="G2G Research — Listed-Equity Mirror | Internal Note">
+<meta name="twitter:description" content="G2G Research — Listed-Equity Mirror | Internal Note | deployed with HTMLaunch">
+<meta name="twitter:image" content="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fjbarry0803.github.io%2Fg2g-research-listed-equity-mirror-intern%2F?w=1200&h=630">
+<meta name="twitter:image:alt" content="G2G Research — Listed-Equity Mirror | Internal Note">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>G2G Research — Listed-Equity Mirror | Internal Note</title>
+<style>
+:root {
+ --bg: #0a0e1a;
+ --bg-deep: #060912;
+ --surface: #111728;
+ --surface-alt: #161d33;
+ --border: #1e2840;
+ --border-bright: #3d4f78;
+ --text-primary: #eceef3;
+ --text-secondary: #a0a8bc;
+ --text-tertiary: #6b7591;
+ --text-faint: #4e566e;
+ --accent-blue: #4d8fd6;
+ --accent-green: #4db87a;
+ --accent-orange: #d4915c;
+ --accent-red: #d45b5b;
+ --accent-gold: #c9a84c;
+ --accent-gold-bright: #e0b958;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+ background: linear-gradient(180deg, var(--bg-deep) 0%, var(--bg) 100%);
+ color: var(--text-primary);
+ line-height: 1.65;
+ min-height: 100vh;
+ font-size: 15px;
+ -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+ max-width: 900px;
+ margin: 0 auto;
+ padding: 48px 32px 80px;
+}
+
+/* ===== HEADER ===== */
+.masthead {
+ border-bottom: 1px solid var(--border);
+ padding-bottom: 24px;
+ margin-bottom: 40px;
+ position: relative;
+}
+.masthead::before {
+ content: '';
+ position: absolute;
+ top: 0; left: 0;
+ width: 48px;
+ height: 2px;
+ background: linear-gradient(90deg, var(--accent-gold-bright), var(--accent-gold));
+}
+.masthead-brand {
+ font-family: 'IBM Plex Mono', 'Menlo', monospace;
+ font-size: 10.5px;
+ letter-spacing: 0.3em;
+ color: var(--accent-gold);
+ text-transform: uppercase;
+ margin-top: 14px;
+ margin-bottom: 6px;
+}
+.masthead-class {
+ font-family: 'IBM Plex Mono', 'Menlo', monospace;
+ font-size: 9.5px;
+ letter-spacing: 0.25em;
+ color: var(--text-tertiary);
+ text-transform: uppercase;
+}
+h1 {
+ font-size: 30px;
+ font-weight: 600;
+ line-height: 1.25;
+ letter-spacing: -0.01em;
+ margin: 18px 0 10px;
+ color: var(--text-primary);
+}
+h1 .accent { color: var(--accent-gold-bright); }
+.subtitle {
+ font-size: 16px;
+ color: var(--text-secondary);
+ line-height: 1.55;
+ margin-bottom: 18px;
+}
+.meta-row {
+ font-family: 'IBM Plex Mono', 'Menlo', monospace;
+ font-size: 11px;
+ color: var(--text-tertiary);
+ letter-spacing: 0.08em;
+ display: flex;
+ gap: 24px;
+ flex-wrap: wrap;
+ margin-top: 10px;
+}
+.meta-row span { display: inline-flex; gap: 6px; align-items: center; }
+.meta-row b { color: var(--text-secondary); font-weight: 500; }
+
+/* ===== TLDR BOX ===== */
+.tldr {
+ background: linear-gradient(180deg, var(--surface), var(--surface-alt));
+ border: 1px solid var(--border-bright);
+ border-left: 3px solid var(--accent-gold);
+ padding: 22px 26px;
+ border-radius: 8px;
+ margin-bottom: 40px;
+}
+.tldr-label {
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 9.5px;
+ letter-spacing: 0.25em;
+ color: var(--accent-gold);
+ text-transform: uppercase;
+ margin-bottom: 10px;
+}
+.tldr p { font-size: 15px; color: var(--text-primary); line-height: 1.65; }
+.tldr p + p { margin-top: 10px; }
+.tldr strong { color: var(--accent-gold-bright); font-weight: 600; }
+
+/* ===== SECTIONS ===== */
+section { margin-bottom: 44px; }
+.section-num {
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 10px;
+ letter-spacing: 0.3em;
+ color: var(--text-tertiary);
+ text-transform: uppercase;
+ margin-bottom: 8px;
+}
+h2 {
+ font-size: 21px;
+ font-weight: 600;
+ color: var(--text-primary);
+ margin-bottom: 14px;
+ line-height: 1.3;
+ letter-spacing: -0.005em;
+}
+h3 {
+ font-size: 15px;
+ font-weight: 600;
+ color: var(--text-primary);
+ margin: 22px 0 10px;
+}
+p { color: var(--text-secondary); margin-bottom: 14px; }
+p strong { color: var(--text-primary); font-weight: 600; }
+p em { color: var(--text-secondary); font-style: italic; }
+
+.key { color: var(--accent-gold-bright); font-weight: 600; }
+.kill { color: var(--accent-red); font-weight: 600; }
+.pos { color: var(--accent-green); font-weight: 600; }
+
+/* ===== DATA CALLOUTS ===== */
+.metric-row {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+ gap: 12px;
+ margin: 18px 0;
+}
+.metric {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ border-radius: 6px;
+ padding: 14px 16px;
+}
+.metric-val {
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 20px;
+ font-weight: 600;
+ color: var(--accent-gold-bright);
+ line-height: 1.1;
+ margin-bottom: 4px;
+}
+.metric-lab {
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 9.5px;
+ letter-spacing: 0.15em;
+ color: var(--text-tertiary);
+ text-transform: uppercase;
+}
+
+/* ===== TABLES ===== */
+.tbl-wrap {
+ margin: 18px 0;
+ overflow-x: auto;
+ border: 1px solid var(--border);
+ border-radius: 8px;
+ background: var(--surface);
+}
+table {
+ width: 100%;
+ border-collapse: collapse;
+ font-size: 13.5px;
+}
+th {
+ text-align: left;
+ padding: 12px 16px;
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 10px;
+ letter-spacing: 0.18em;
+ color: var(--text-tertiary);
+ text-transform: uppercase;
+ border-bottom: 1px solid var(--border);
+ background: var(--bg);
+}
+td {
+ padding: 12px 16px;
+ color: var(--text-secondary);
+ border-bottom: 1px solid var(--border);
+ vertical-align: top;
+}
+tr:last-child td { border-bottom: none; }
+tr.totals td {
+ background: var(--surface-alt);
+ color: var(--text-primary);
+ font-weight: 600;
+}
+.num {
+ font-family: 'IBM Plex Mono', monospace;
+ text-align: right;
+ color: var(--text-primary);
+ font-weight: 500;
+}
+.num.gold { color: var(--accent-gold-bright); }
+.num.red { color: var(--accent-red); }
+.num.green { color: var(--accent-green); }
+
+/* ===== QUOTE BLOCK ===== */
+blockquote {
+ border-left: 2px solid var(--border-bright);
+ padding: 2px 18px;
+ margin: 16px 0;
+ color: var(--text-secondary);
+ font-style: italic;
+ font-size: 14px;
+}
+blockquote cite {
+ display: block;
+ margin-top: 8px;
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 10px;
+ letter-spacing: 0.15em;
+ color: var(--text-tertiary);
+ font-style: normal;
+ text-transform: uppercase;
+}
+
+/* ===== LOGIC CHAIN ===== */
+.chain {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ border-radius: 8px;
+ padding: 18px 22px;
+ margin: 16px 0;
+}
+.chain-step {
+ display: flex;
+ gap: 14px;
+ padding: 8px 0;
+ align-items: flex-start;
+ border-bottom: 1px dashed var(--border);
+}
+.chain-step:last-child { border-bottom: none; }
+.chain-num {
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 10px;
+ letter-spacing: 0.1em;
+ color: var(--accent-gold);
+ min-width: 24px;
+ padding-top: 3px;
+}
+.chain-body { flex: 1; font-size: 14px; color: var(--text-secondary); line-height: 1.55; }
+.chain-body strong { color: var(--text-primary); }
+
+/* ===== TAKE BOX ===== */
+.take {
+ background: linear-gradient(135deg, rgba(77, 184, 122, 0.06), rgba(77, 143, 214, 0.04));
+ border: 1px solid var(--border);
+ border-left: 3px solid var(--accent-green);
+ padding: 18px 22px;
+ border-radius: 6px;
+ margin: 20px 0;
+}
+.take-label {
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 10px;
+ letter-spacing: 0.25em;
+ color: var(--accent-green);
+ text-transform: uppercase;
+ margin-bottom: 8px;
+}
+.take p { font-size: 14px; color: var(--text-primary); margin: 0; }
+
+.risk-box {
+ background: rgba(212, 91, 91, 0.04);
+ border: 1px solid var(--border);
+ border-left: 3px solid var(--accent-red);
+ padding: 14px 18px;
+ border-radius: 6px;
+ margin: 12px 0;
+}
+.risk-box .risk-name {
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 10px;
+ letter-spacing: 0.2em;
+ color: var(--accent-red);
+ text-transform: uppercase;
+ margin-bottom: 6px;
+}
+.risk-box p { font-size: 13px; color: var(--text-secondary); margin: 0; line-height: 1.55; }
+
+.two-col {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 16px;
+}
+@media (max-width: 700px) {
+ .two-col { grid-template-columns: 1fr; }
+ .wrap { padding: 32px 18px 60px; }
+ h1 { font-size: 24px; }
+}
+
+ul { color: var(--text-secondary); padding-left: 22px; margin: 10px 0; }
+ul li { margin-bottom: 6px; line-height: 1.6; }
+ul li strong { color: var(--text-primary); }
+
+.footer {
+ margin-top: 60px;
+ padding-top: 24px;
+ border-top: 1px solid var(--border);
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 10.5px;
+ letter-spacing: 0.1em;
+ color: var(--text-tertiary);
+ line-height: 1.7;
+}
+
+code {
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 12.5px;
+ background: var(--surface);
+ border: 1px solid var(--border);
+ border-radius: 3px;
+ padding: 1px 6px;
+ color: var(--accent-gold-bright);
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<div class="masthead">
+ <div class="masthead-brand">G2G Research · Addendum</div>
+ <div class="masthead-class">Privileged &amp; Confidential · Internal Circulation Only</div>
+ <h1>The Listed-Equity Mirror <span class="accent">—</span> A Public-Market Note on the G2G Thesis</h1>
+ <div class="subtitle">Working through whether the €164bn German Catholic Church disposal cycle has any clean listed-equity expression, and landing on a non-consensus short argument against German residential REITs.</div>
+ <div class="meta-row">
+  <span><b>To:</b> Tobi</span>
+  <span><b>From:</b> Joe</span>
+  <span><b>Date:</b> 20 April 2026</span>
+  <span><b>Pages:</b> 1 of 1</span>
+ </div>
+</div>
+
+<!-- TL;DR -->
+<div class="tldr">
+<div class="tldr-label">Bottom Line Up Front</div>
+<p>Revisited our work to ask whether any listed equity has material exposure to the €164bn disposal cycle we modelled. <strong>The long doesn't exist</strong> — the buy-side precedent (AVILA/Petruswerk) is a private GmbH and the diocesan procurement profile structurally excludes listed REITs. <strong>But the short does.</strong></p>
+<p>€80–110bn of residential-adjacent supply entering the German market over 2026–35, concentrated in the premium urban cores that form the NAV backbone of Vonovia / LEG / TAG, is <strong>15–25% of aggregate listed-REIT German residential NAV</strong> — and it is completely outside sell-side models because the data sits in private church registers and diocesan VIR documents, not BulwienGesa or DIW supply statistics. The consensus "chronic undersupply" narrative partially breaks in exactly the segment that matters for the listed names.</p>
+<p>Market has already started to crack on rate-sensitivity (VNA −13% / LEG −21% H2 2025 per TR Property). Our research gives a <strong>second, structural leg</strong> that compounds as Hamburg VIR tranches start pricing from 2026 H2.</p>
+</div>
+
+<!-- §1 — QUESTION -->
+<section>
+ <div class="section-num">§ 01 — Question Reframed</div>
+ <h2>Is there a listed-equity expression of the G2G thesis?</h2>
+ <p>A Cevian-focused analyst asked me the natural follow-up: given the scale of the disposal cycle we have modelled, is there a listed stock whose equity story is materially altered by it? The question is good and it forced me to take a proper look rather than default to "it's all private-market."</p>
+ <p>The answer has two sides, and the second side is the interesting one.</p>
+
+ <div class="chain">
+  <div class="chain-step">
+   <div class="chain-num">01</div>
+   <div class="chain-body"><strong>Long side — no.</strong> The buy-side precedent you and I modelled against (Petruswerk 2003/04, acquired by Fernando's AVILA Holding) is a private GmbH. The §02 below explains why that's not an accident.</div>
+  </div>
+  <div class="chain-step">
+   <div class="chain-num">02</div>
+   <div class="chain-body"><strong>Short side — yes.</strong> Our quantified disposal flow is 15–25% of listed German residential REIT aggregate NAV, concentrated in the premium urban segment that dominates Vonovia / LEG / TAG NAV marks. Sell-side consensus can't see this because the underlying data is private. §03 does the math.</div>
+  </div>
+  <div class="chain-step">
+   <div class="chain-num">03</div>
+   <div class="chain-body"><strong>Why it matters to us.</strong> Turns a private-markets advisory product into a legitimate adjacent research note targetable at macro pods, long-short real estate funds, and credit investors with German-REIT exposure. §05 proposes construction.</div>
+  </div>
+ </div>
+</section>
+
+<!-- §2 — WHY NO LONG -->
+<section>
+ <div class="section-num">§ 02 — Why the Listed Long Does Not Exist</div>
+ <h2>Diocese procurement profile is structurally private</h2>
+ <p>Our stakeholder-ops work on Hamburg — and the broader G2G framework on approver psychology across the Aufsichtsrat / DVVR / Generalvikar chain — spelled out the ideal buyer profile with unusual specificity. Worth restating here because it is the single decisive fact for the listed-equity question:</p>
+
+ <blockquote>
+  Quiet, non-publicity-generating. Repeat counterparty taking 5–10 properties per quarter. Not a PE fund, not non-Catholic, not controversial. Understands Erbbaurecht and Canon Law. Makes approving sales comfortable for lay Catholics.
+  <cite>— stakeholder-ops.html, approver-comfort criteria</cite>
+ </blockquote>
+
+ <p>Every listed German residential vehicle fails at least two of those tests:</p>
+
+ <div class="tbl-wrap">
+  <table>
+   <thead><tr>
+    <th>Name</th>
+    <th>Reason it fails diocesan procurement</th>
+   </tr></thead>
+   <tbody>
+    <tr>
+     <td><strong>Vonovia</strong></td>
+     <td>Size triggers ad-hoc disclosure on any meaningful acquisition. Permanent controversy on tenant rights (Mieterbund public campaigns since 2019). Would make lay-Catholic approvers visibly uncomfortable.</td>
+    </tr>
+    <tr>
+     <td><strong>LEG Immobilien</strong></td>
+     <td>Regulated-retail NRW focus makes it dependent on public-housing subsidy goodwill; cannot plausibly outbid private vehicles on discretion or speed. Ex-state-owned but privatised via Goldman/Perry private equity in 2008 — political fingerprint that still matters.</td>
+    </tr>
+    <tr>
+     <td><strong>TAG Immobilien</strong></td>
+     <td>Bulk landlord reputation in North-East Germany; wrong geography for the Hamburg / NRW / South-German diocesan concentration anyway. Management turnover has been high.</td>
+    </tr>
+    <tr>
+     <td><strong>Grand City Properties</strong></td>
+     <td>Luxembourg structure; Gabay-associated governance history; value-add strategy is publicly known and would attract media attention in any diocesan context.</td>
+    </tr>
+    <tr>
+     <td><strong>Aroundtown</strong></td>
+     <td>Commercial / hotel mix; mixed-nationality free float; post-2022 debt troubles make it an active HY credit story. Exactly the wrong buyer signature.</td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+
+ <p>By contrast, the Petruswerk precedent: <em>AVILA Holding, founded 2001 by Carmelite priests Bruderhofer and Kurzhals alongside theologian-economist Dr. Douglas Fernando. Acquired the Erzbistum Berlin's 2,300-unit housing portfolio in 2003–04. Remained a closely-held GmbH throughout. Within 20 years generated €45m annual profit from the portfolio.</em> The structural fit is near-perfect: Catholic-affiliated founders, theological credibility, discretion, scale sufficient to take portfolios but small enough to avoid public-market disclosure.</p>
+
+ <p><strong>There is no listed equivalent, and the diocesan bias against creating one is durable.</strong> If a Hamburg equivalent of AVILA emerges around the VIR process, it will also be a closely-held vehicle.</p>
+
+ <div class="take">
+  <div class="take-label">Take on the long side</div>
+  <p>The value capture accrues to whoever is set up as the AVILA of Hamburg / Cologne / Munich. That is a private-equity conversation, not a listed-equity one. Our advisory product is correctly pitched to family offices, specialist residential PE and a narrow band of Catholic-adjacent foundations — not to public-market investors.</p>
+ </div>
+</section>
+
+<!-- §3 — SHORT QUANTIFICATION -->
+<section>
+ <div class="section-num">§ 03 — The Short-Side Quantification</div>
+ <h2>€80–110bn of supply vs ~€90bn of listed-REIT NAV</h2>
+ <p>The non-obvious finding. Start from our own disposal-flow math:</p>
+
+ <div class="metric-row">
+  <div class="metric"><div class="metric-val">€164bn</div><div class="metric-lab">Total system MV (our est.)</div></div>
+  <div class="metric"><div class="metric-val">10–15 yrs</div><div class="metric-lab">Firesale window 2026–40</div></div>
+  <div class="metric"><div class="metric-val">€11–16bn</div><div class="metric-lab">Gross asset flow p.a.</div></div>
+  <div class="metric"><div class="metric-val">~55%</div><div class="metric-lab">Residential-adjacent mix</div></div>
+ </div>
+
+ <p>The 55% residential-adjacent figure is the residential portion of L1 KdöR property plus L5 housing plus L6 parish ancillary plus any L7 Erbbaurecht-suitable urban land. Excludes agricultural, institutional (hospitals, schools retained), and pure ecclesiastical use. Probably conservative given Hamburg's mix skew.</p>
+
+ <h3>Cumulative supply impact 2026–35</h3>
+
+ <div class="tbl-wrap">
+  <table>
+   <thead><tr>
+    <th>Component</th>
+    <th class="num">Value</th>
+    <th>Note</th>
+   </tr></thead>
+   <tbody>
+    <tr>
+     <td>Gross system flow over 10 years</td>
+     <td class="num gold">€110–160bn</td>
+     <td>Assumes half of the €164bn base moves in the first 10-year tranche (front-loaded because Hamburg / Hildesheim / Regensburg are the most stressed).</td>
+    </tr>
+    <tr>
+     <td>Residential-adjacent portion (55%)</td>
+     <td class="num gold">€60–90bn</td>
+     <td>The flow that affects the market segment listed REITs care about.</td>
+    </tr>
+    <tr>
+     <td>+ Erbbaurecht "hidden supply"</td>
+     <td class="num gold">€20bn</td>
+     <td>Land that's leased (not sold) via 99-yr EBR is economic supply — it enables new dwelling units even though the freehold doesn't change hands. Does not show up in sale-transaction data at all.</td>
+    </tr>
+    <tr class="totals">
+     <td><strong>Total residential-adjacent supply impact</strong></td>
+     <td class="num gold"><strong>€80–110bn</strong></td>
+     <td><strong>2026–35 cumulative.</strong></td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+
+ <h3>Vs listed-REIT aggregate NAV</h3>
+
+ <div class="tbl-wrap">
+  <table>
+   <thead><tr>
+    <th>Listed vehicle</th>
+    <th class="num">Mkt cap (Apr '26)</th>
+    <th class="num">Gross asset value</th>
+    <th class="num">NAV</th>
+   </tr></thead>
+   <tbody>
+    <tr><td>Vonovia (VNA)</td><td class="num">~€20bn</td><td class="num">~€85bn</td><td class="num">~€42bn</td></tr>
+    <tr><td>LEG Immobilien (LEG)</td><td class="num">~€4.5bn</td><td class="num">~€17bn</td><td class="num">~€7bn</td></tr>
+    <tr><td>TAG Immobilien (TAG)</td><td class="num">~€2bn</td><td class="num">~€6bn</td><td class="num">~€3bn</td></tr>
+    <tr><td>Grand City Properties (GYC)</td><td class="num">~€1.5bn</td><td class="num">~€8bn</td><td class="num">~€3.5bn</td></tr>
+    <tr><td>Aroundtown residential sleeve</td><td class="num">n/a</td><td class="num">~€4bn</td><td class="num">~€1.5bn</td></tr>
+    <tr class="totals">
+     <td><strong>Aggregate German listed residential</strong></td>
+     <td class="num"><strong>~€28bn</strong></td>
+     <td class="num"><strong>~€120bn</strong></td>
+     <td class="num"><strong>~€57bn</strong></td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+
+ <p>So: €80–110bn of church-origin residential supply over 10 years against ~€120bn of listed-REIT gross asset value or ~€57bn of equity-NAV. <strong>The supply is comparable in magnitude to the entire listed sector's gross asset base.</strong> Even if only 30–40% of church disposals ultimately land in the premium urban segments where the REITs' NAV marks are set, we are still looking at <span class="key">€25–45bn of direct comp supply in exactly the neighbourhoods that determine NAV</span>.</p>
+
+ <div class="take">
+  <div class="take-label">Short-side take</div>
+  <p>This is a <strong>second structural leg</strong> on top of the rate-sensitivity the sector has already been demonstrating. Rate-driven de-rating is priced-in and reversible. Supply-driven NAV compression from church disposals is a new, unmodelled, non-reversible headwind that compounds as VIR tranches price through 2026–28.</p>
+ </div>
+</section>
+
+<!-- §4 — CONSENSUS BLINDSPOT -->
+<section>
+ <div class="section-num">§ 04 — Why Consensus Can't See It</div>
+ <h2>The information asymmetry is our moat</h2>
+ <p>Three structural reasons the sell-side misses this, each of which is a defence of the alpha durability:</p>
+
+ <div class="chain">
+  <div class="chain-step">
+   <div class="chain-num">A</div>
+   <div class="chain-body"><strong>No aggregation.</strong> Disposal announcements are fragmented across 27 independent KdöR dioceses each running its own VIR-equivalent process. There is no unified "German Catholic Church is selling €164bn" press release. The only way to see the flow is the parish-level roll-up we built. Sell-side analysts do not have that data and have no incentive to build it.</div>
+  </div>
+  <div class="chain-step">
+   <div class="chain-num">B</div>
+   <div class="chain-body"><strong>Erbbaurecht accounting.</strong> A 99-year ground lease on church land does not appear as "property sold" in Diözesanbilanz filings — the freehold stays on the balance sheet, only the ground-rent income appears. So €20bn+ of structural supply is <em>economically supply but statistically invisible</em> to anyone tracking flow via headline transaction volumes.</div>
+  </div>
+  <div class="chain-step">
+   <div class="chain-num">C</div>
+   <div class="chain-body"><strong>Wrong reference data.</strong> Sell-side German residential models anchor on BulwienGesa, DIW, Destatis new-build completion data. None of those datasets include church-origin redevelopment flow because the dwellings arrive via re-use of existing parish buildings (rectory → condos, monastery → student housing, Gemeindehaus → co-working). This is additive supply to the existing stock without ever showing up in new-construction statistics.</div>
+  </div>
+ </div>
+
+ <p>The net effect: a sell-side analyst updating their Vonovia NAV model using BulwienGesa Hamburg comps is using an input that is <strong>structurally under-sampled</strong> for the next decade. Our work quantifies the gap.</p>
+</section>
+
+<!-- §5 — TRADE CONSTRUCTION -->
+<section>
+ <div class="section-num">§ 05 — Trade Construction</div>
+ <h2>What an institutional investor would actually do with this</h2>
+
+ <h3>Cleanest expressions</h3>
+ <div class="two-col">
+  <div class="risk-box" style="border-left-color: var(--accent-red);">
+   <div class="risk-name" style="color: var(--accent-red);">Short LEG Immobilien (ETR:LEG)</div>
+   <p>Smaller, less-diversified, 73% NRW-concentrated — direct overlap with Cologne, Essen, Münster, Paderborn, Aachen (5 of 27 dioceses, including Cologne as the richest). Already down 21% H2 2025 on rate-sensitivity. Market cap ~€4.5bn — sized for a meaningful institutional short. Borrow is generally available. No index-weight defence.</p>
+  </div>
+  <div class="risk-box" style="border-left-color: var(--accent-orange);">
+   <div class="risk-name" style="color: var(--accent-orange);">Short Vonovia (ETR:VNA)</div>
+   <p>Liquid, index-reference name for the sector. €20bn market cap. More diversified (NRW + Berlin + Sweden + Austria) so the G2G exposure is diluted, but the sell-side narrative "German housing shortage" is most concentrated here — meaning the <em>narrative</em> damage when first supply signals arrive is greatest. Pair short with long Swedish residential (SBB-post-recovery or Balder) for clean German-residential isolation.</p>
+  </div>
+ </div>
+
+ <h3>Entry timing</h3>
+ <ul>
+  <li><strong>Now:</strong> structural positioning. Rate-cut rally risk exists — position size should allow for 10–15% against before thesis proves out.</li>
+  <li><strong>H2 2026 catalyst:</strong> first Hamburg VIR tranche prices. If our Sachwert estimates are right, print will come in 15–25% below current BulwienGesa Hamburg comps. That is the first data point sell-side can't explain.</li>
+  <li><strong>H1 2027 catalyst:</strong> Regensburg and Hildesheim both hitting their L4 KZVK / L6 parish cashflow inflection per our Crunch Index — second wave of forced sellers.</li>
+  <li><strong>2028+:</strong> cumulative supply starts visibly impacting Hamburg and Cologne premium-segment vacancy / rent-growth data, which filters into listed REIT KPI prints.</li>
+ </ul>
+
+ <h3>Position sizing heuristic</h3>
+ <p>If a macro pod sized by conviction × non-consensus × catalyst-visibility, this is probably a 1–2% GMV short position as a structural overlay to German residential exposure — not a trade you take to 5% GMV because the timing is too uncertain and rate-cut tape risk is real. The value is asymmetric carry: you capture the structural leg if the thesis plays out; you lose the Bund-yield beta if rates rally. Worth pricing that beta exposure separately (via Bund futures overlay).</p>
+</section>
+
+<!-- §6 — RISKS -->
+<section>
+ <div class="section-num">§ 06 — What Would Kill the Short</div>
+ <h2>Honest risks to the thesis</h2>
+ <p>Four scenarios that would break the short-side argument, ranked by how much damage each does:</p>
+
+ <div class="risk-box">
+  <div class="risk-name">Risk 1 — ECB cuts faster than expected</div>
+  <p>Rate-driven German residential rally could dominate the supply story for 12–18 months. This is the biggest near-term risk and is exactly why the position sizing above is modest. Hedgeable via Bund futures but cannot be eliminated. If Bund 10yr falls below 2% the short is underwater regardless of church flow.</p>
+ </div>
+
+ <div class="risk-box">
+  <div class="risk-name">Risk 2 — "Wohnraum für Alle" demand subsidy scales</div>
+  <p>Current federal programme is €19.8bn through 2027 rising to €6.0bn/year by 2028. If scaled meaningfully (e.g., as part of post-Merz coalition bargaining), it creates a subsidised bid that absorbs incremental supply at preserved headline prices. Listed REITs are indirect beneficiaries via public-housing development partnerships. Ironically helps the listed names and hurts the private-vehicle AVILA-type buyers we identified on the long side.</p>
+ </div>
+
+ <div class="risk-box">
+  <div class="risk-name">Risk 3 — Canon Law friction and political resistance slow the disposal cycle</div>
+  <p>The process could materially slow if Vatican approvals under CIC c. 1291 become a bottleneck, or if Catholic lay resistance (Laienrat mobilisation, Generalvikar political pressure) delays major tranches. Our Erbbaurecht bypass thesis is the answer to this — but if the diocese can't negotiate acceptable Erbbauzins rates with private counterparties, the flow stalls entirely. Supply reduces; listed REIT thesis preserved; our short doesn't work.</p>
+ </div>
+
+ <div class="risk-box">
+  <div class="risk-name">Risk 4 — Rent-cap regime actually insulates listed REIT mark-to-market</div>
+  <p>The Mietpreisbremse / Mietendeckel regime means German residential REIT NAV is less mark-to-market-sensitive than UK / US peers. Even if church supply compresses Hamburg premium-segment sale prices by 15%, the REITs' rent-capped cash flows don't move proportionally — so NAV compression may be smaller than the supply shock suggests. Could make the thesis a "right for wrong reason" trade.</p>
+ </div>
+
+ <p style="margin-top: 18px;">Of these, Risk 1 is the biggest in the first 12 months; Risk 4 is the biggest in the longer arc. Risks 2 and 3 are both material but hedgeable via position sizing and Hamburg-specific monitoring.</p>
+</section>
+
+<!-- §7 — WHAT THIS MEANS FOR US -->
+<section>
+ <div class="section-num">§ 07 — What This Means For G2G's Research Product</div>
+ <h2>Adjacent institutional-investor note</h2>
+ <p>Our current product is a private-markets advisory aimed at family offices and residential-PE funds. The short-side analysis here is a distinct product — call it a <strong>"structural supply note"</strong> — that could be sold in parallel to macro pods, long-short real estate specialists, and credit investors with German REIT exposure. Specifically:</p>
+
+ <ul>
+  <li><strong>Macro pods at the big multi-managers</strong> (Millennium, Citadel, Balyasny, ExodusPoint). Global macro books regularly short European real estate as an ECB-rate proxy; this gives them an additional structural leg that tracks our proprietary data.</li>
+  <li><strong>Long-short real estate funds</strong> (TR Property itself; similarly Principal Real Estate, Cohen &amp; Steers European sleeves). Already positioned bearishly on German residential on rate-sensitivity; our work gives them a second catalyst.</li>
+  <li><strong>Credit investors</strong> with Vonovia or LEG senior unsecured or hybrid exposure — if NAV compression accelerates materially, LTVs migrate higher, bond spreads widen. An early-warning note on this is sellable to IG credit PMs.</li>
+ </ul>
+
+ <p>Pricing model would mirror macro-research notes: €25–50k per single-seat annual subscription for the quarterly-updated short-side monitor, plus a separate one-off premium for the underlying parish-level supply dataset. Different economics from the private-markets advisory engagement but non-competitive with it — different buyer, different output format, same underlying data asset.</p>
+
+ <div class="take">
+  <div class="take-label">Proposal</div>
+  <p>Let's spend one afternoon mocking up what a 4–6 page quarterly note would look like. If we think it's sellable, the first outreach is probably one of the German-residential-underweight specialists at the big EU long-short real estate shops — they already have the conviction; we'd be selling them the quantified data to support it.</p>
+ </div>
+</section>
+
+<div class="footer">
+ G2G Research · Privileged &amp; Confidential · Prepared for internal discussion only<br>
+ This note is not investment advice. All estimates represent the authors' analysis based on the G2G proprietary dataset; ranges reflect modelling uncertainty not confidence in the underlying data. Quantification of supply flow against listed REIT NAV assumes mid-point of 55% residential-adjacent mix; sensitivity available on request. Do not circulate beyond addressee without authors' consent.
+</div>
+
+</div>
+
+</body>
+</html>
